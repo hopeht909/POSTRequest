@@ -15,9 +15,13 @@ class Users {
         @SerializedName("location")
         var location: String? = null
 
-        constructor(name: String?, location: String?) {
+        @SerializedName("pk")
+        var pk : Int? = null
+
+        constructor(name: String?, location: String? , pk : Int) {
             this.name = name
             this.location = location
+            this.pk = pk
         }
     }
 }

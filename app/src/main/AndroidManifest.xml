@@ -12,6 +12,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.PostRequest">
         <activity
+            android:name=".MainActivity2"
+            android:exported="true" />
+        <activity
+            android:name=".updateUser"
+            android:exported="true" />
+        <activity
             android:name=".NewUser"
             android:exported="true" />
         <activity

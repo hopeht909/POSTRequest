@@ -12,6 +12,12 @@
         android:layout_height="wrap_content"
         android:visibility="gone"
         android:text="view" />
+    <Button
+        android:id="@+id/buttonDelete"
+        android:onClick="open"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="update/delete user" />
 
     <Button
         android:id="@+id/button3"

@@ -17,12 +17,16 @@ class NewUser : AppCompatActivity() {
         setContentView(R.layout.activity_new_user)
 
         val name = findViewById<View>(R.id.editTextTextPersonName) as EditText
+        val userID = findViewById<View>(R.id.editText) as EditText
+
         val location = findViewById<View>(R.id.editTextTextPersonName2) as EditText
         val savebtn = findViewById<View>(R.id.button) as Button
 
         savebtn.setOnClickListener {
 
-            var f = Users.UserDetails(name.text.toString(), location.text.toString())
+            var f = Users.UserDetails(name.text.toString(), location.text.toString()
+                     ,  userID.text.toString().toInt()
+            )
 
             addSingleuser(f, onResult = {
                 name.setText("")
